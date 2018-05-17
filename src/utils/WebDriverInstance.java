@@ -30,11 +30,11 @@ public class WebDriverInstance {
 		loginTestCase.login();
 	}
 
-	@AfterClass
-	public static void tearDown() throws Exception {
-		driver.close();
+//	@AfterClass
+//	public static void tearDown() throws Exception {
+//		driver.close();
 //		driver.quit();
-	}
+//	}
 	
 	public static void sleep(int time){
 		try {

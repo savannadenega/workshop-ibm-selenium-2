@@ -29,18 +29,18 @@ public class MenuAdminTestCase extends WebDriverInstance {
 	}
 	
 	@Test
-	public void insertUserLogin() throws InterruptedException {
-		Thread.sleep(1000);
+	public void insertUserLogin() {
+		sleep(1000);
 		menuAdminObjs.bottonAdd(driver).click();
-		Thread.sleep(1000);
+		sleep(1000);
 		menuAdminObjs.textEmployeeName(driver).sendKeys("Savanna Denega");
-		Thread.sleep(1000);
+		sleep(1000);
 		menuAdminObjs.textUsername(driver).sendKeys("savannadenega1");
-		Thread.sleep(1000);
+		sleep(1000);
 		menuAdminObjs.textPassword(driver).sendKeys("savannadenega1");
-		Thread.sleep(1000);
+		sleep(1000);
 		menuAdminObjs.textConfirmPassword(driver).sendKeys("savannadenega1");
-		Thread.sleep(1000);
+		sleep(1000);
 		menuAdminObjs.bottonSave(driver).click();
 	}
 	
