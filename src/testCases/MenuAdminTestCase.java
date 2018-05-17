@@ -21,23 +21,27 @@ import utils.WebDriverInstance;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MenuAdminTestCase extends WebDriverInstance {
 
-	LoginTestCase loginTestCase = PageFactory.initElements(driver, LoginTestCase.class);
 	MenuAdminObjs menuAdminObjs = PageFactory.initElements(driver, MenuAdminObjs.class);
 		
 	@Before
 	public void before() throws InterruptedException {
-		loginTestCase.login();
 		menuAdminObjs.bottonMenuAdmin(driver).click();
 	}
 	
 	@Test
-	public void insertUser() throws InterruptedException {
+	public void insertUserLogin() throws InterruptedException {
 		Thread.sleep(1000);
 		menuAdminObjs.bottonAdd(driver).click();
+		Thread.sleep(1000);
 		menuAdminObjs.textEmployeeName(driver).sendKeys("Savanna Denega");
-		menuAdminObjs.textUsername(driver).sendKeys("savannadenega");
-		menuAdminObjs.textPassword(driver).sendKeys("savannadenega");
-		menuAdminObjs.textConfirmPassword(driver).sendKeys("savannadenega");
+		Thread.sleep(1000);
+		menuAdminObjs.textUsername(driver).sendKeys("savannadenega1");
+		Thread.sleep(1000);
+		menuAdminObjs.textPassword(driver).sendKeys("savannadenega1");
+		Thread.sleep(1000);
+		menuAdminObjs.textConfirmPassword(driver).sendKeys("savannadenega1");
+		Thread.sleep(1000);
+		menuAdminObjs.bottonSave(driver).click();
 	}
 	
 }
