@@ -46,9 +46,38 @@ public class MenuRecruitmentObjs {
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement buttonSearchSearch(WebDriver driver) {
+	public WebElement buttonSearch(WebDriver driver) {
 		String id = "searchBtn";
 		return driver.findElement(By.id(id));
 	}
 	
+	public WebElement buttonAdd(WebDriver driver) {
+		String id = "btnAdd";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement candidateFirstName(WebDriver driver) {
+		String id = "addCandidate_firstName";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement candidateLastName(WebDriver driver) {
+		String id = "addCandidate_lastName";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement candidateEmail(WebDriver driver) {
+		String id = "addCandidate_email";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement comboCandidateVacancy(WebDriver driver) {
+		String id = "addCandidate_vacancy";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement buttonSave(WebDriver driver) {
+		String id = "btnSave";
+		return driver.findElement(By.id(id));
+	}
 }
