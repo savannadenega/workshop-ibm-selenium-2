@@ -11,19 +11,19 @@ import org.openqa.selenium.WebElement;
  */
 public class MenuPIMObjs {
 	
-	public WebElement bottonMenuPIM(WebDriver driver) {
+	public WebElement buttonMenuPIM(WebDriver driver) {
 		String id = "menu_pim_viewPimModule";
 		return driver.findElement(By.id(id));
 	}
 	
-	/////
+	//
 	
-	public WebElement bottonSubMenuPIMAddEmployee(WebDriver driver) {
+	public WebElement buttonSubMenuPIMAddEmployee(WebDriver driver) {
 		String id = "menu_pim_addEmployee";
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement bottonAddEmployeeAdd(WebDriver driver) {
+	public WebElement buttonAddEmployeeAdd(WebDriver driver) {
 		String id = "btnAdd";
 		return driver.findElement(By.id(id));
 	}
@@ -38,14 +38,14 @@ public class MenuPIMObjs {
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement bottonAddEmployeeSave(WebDriver driver) {
+	public WebElement buttonAddEmployeeSave(WebDriver driver) {
 		String id = "btnSave";
 		return driver.findElement(By.id(id));
 	}
 
-	////
+	//
 	
-	public WebElement bottonSubMenuPIMEmployeeList(WebDriver driver) {
+	public WebElement buttonSubMenuPIMEmployeeList(WebDriver driver) {
 		String id = "menu_pim_viewEmployeeList";
 		return driver.findElement(By.id(id));
 	}
@@ -55,7 +55,7 @@ public class MenuPIMObjs {
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement bottonSearchSearch(WebDriver driver) {
+	public WebElement buttonSearchSearch(WebDriver driver) {
 		String id = "searchBtn";
 		return driver.findElement(By.id(id));
 	}

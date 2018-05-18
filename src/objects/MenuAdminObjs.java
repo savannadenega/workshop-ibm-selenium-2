@@ -11,12 +11,12 @@ import org.openqa.selenium.WebElement;
  */
 public class MenuAdminObjs {
 
-	public WebElement bottonMenuAdmin(WebDriver driver) {
+	public WebElement buttonMenuAdmin(WebDriver driver) {
 		String id = "menu_admin_viewAdminModule";
 		return driver.findElement(By.id(id));
 	}
 		
-	public WebElement bottonAdd(WebDriver driver) {
+	public WebElement buttonAdd(WebDriver driver) {
 		String id = "btnAdd";
 		return driver.findElement(By.id(id));
 	}
@@ -41,7 +41,7 @@ public class MenuAdminObjs {
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement bottonSave(WebDriver driver) {
+	public WebElement buttonSave(WebDriver driver) {
 		String id = "btnSave";
 		return driver.findElement(By.id(id));
 	}

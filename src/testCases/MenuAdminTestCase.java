@@ -3,10 +3,6 @@ package testCases;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
-import org.junit.runner.RunWith;
-import org.junit.runner.notification.Failure;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.support.PageFactory;
 
@@ -25,13 +21,13 @@ public class MenuAdminTestCase extends WebDriverInstance {
 		
 	@Before
 	public void before(){
-		menuAdminObjs.bottonMenuAdmin(driver).click();
+		menuAdminObjs.buttonMenuAdmin(driver).click();
 	}
 	
 	@Test
 	public void insertUserLogin() {
 		sleep(1000);
-		menuAdminObjs.bottonAdd(driver).click();
+		menuAdminObjs.buttonAdd(driver).click();
 		sleep(1000);
 		menuAdminObjs.textEmployeeName(driver).sendKeys("Savanna Denega");
 		sleep(1000);
@@ -41,7 +37,7 @@ public class MenuAdminTestCase extends WebDriverInstance {
 		sleep(1000);
 		menuAdminObjs.textConfirmPassword(driver).sendKeys("savannadenega1");
 		sleep(1000);
-		menuAdminObjs.bottonSave(driver).click();
+		menuAdminObjs.buttonSave(driver).click();
 	}
 	
 }

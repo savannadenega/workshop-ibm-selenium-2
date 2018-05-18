@@ -1,16 +1,12 @@
 package testCases;
 
-import javax.swing.plaf.MenuItemUI;
-
 import org.junit.Before;
 import org.junit.FixMethodOrder;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 
-import objects.MenuAdminObjs;
 import objects.MenuLeaveObjs;
 import utils.WebDriverInstance;
 
@@ -26,16 +22,15 @@ public class MenuLeaveTestCase extends WebDriverInstance {
 	
 	@Before
 	public void before(){
-		menuLeaveObjs.bottonMenuLeave(driver).click();
+		menuLeaveObjs.buttonMenuLeave(driver).click();
 	}
 	
 	@Test
-	@Ignore
-	public void add1LeaveEntitlement(){
+	public void addLeaveEntitlement(){
 		sleep(1000);
-		menuLeaveObjs.bottonSubMenuEntitlements(driver).click();
+		menuLeaveObjs.buttonSubMenuEntitlements(driver).click();
 		sleep(1000);
-		menuLeaveObjs.bottonSubMenuAddEntitlements(driver).click();
+		menuLeaveObjs.buttonSubMenuAddEntitlements(driver).click();
 		sleep(1000);
 		menuLeaveObjs.textEmployee(driver).sendKeys("Savanna Denega");
 		menuLeaveObjs.textEmployee(driver).sendKeys(Keys.RETURN);
@@ -46,14 +41,14 @@ public class MenuLeaveTestCase extends WebDriverInstance {
 		sleep(1000);
 		menuLeaveObjs.textEntitlement(driver).sendKeys("1");
 		sleep(1000);
-		menuLeaveObjs.bottonSave(driver).click();
+		menuLeaveObjs.buttonSave(driver).click();
 		sleep(1000);
 	}
 	
 	@Test
-	public void add2AssignLeave(){
+	public void createAssignLeave(){
 		sleep(1000);
-		menuLeaveObjs.bottonSubMenuAssignLeave(driver).click();
+		menuLeaveObjs.buttonSubMenuAssignLeave(driver).click();
 		sleep(1000);
 		menuLeaveObjs.textSubMenuAssignLeaveEmployeeName(driver).sendKeys("Savanna Denega");
 		sleep(1000);
@@ -67,7 +62,7 @@ public class MenuLeaveTestCase extends WebDriverInstance {
 		sleep(1000);
 		menuLeaveObjs.textSubMenuAssignLeaveFromDate(driver).sendKeys(Keys.RETURN);
 		sleep(1000);
-		menuLeaveObjs.bottonSubMenuAssignLeaveAssignBtn(driver).click();
+		menuLeaveObjs.buttonSubMenuAssignLeaveAssignBtn(driver).click();
 		sleep(1000);
 	}
 

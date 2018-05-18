@@ -46,7 +46,7 @@ public class MenuRecruitmentObjs {
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement bottonSearchSearch(WebDriver driver) {
+	public WebElement buttonSearchSearch(WebDriver driver) {
 		String id = "searchBtn";
 		return driver.findElement(By.id(id));
 	}

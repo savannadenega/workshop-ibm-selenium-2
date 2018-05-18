@@ -1,16 +1,11 @@
 package testCases;
 
-import java.util.concurrent.TimeUnit;
-
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.runners.MethodSorters;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
-import org.junit.runners.MethodSorters;
 
 import objects.MenuPIMObjs;
 import utils.WebDriverInstance;
@@ -27,34 +22,34 @@ public class MenuPIMTestCase extends WebDriverInstance {
 		
 	@Before
 	public void before() {
-		menuPIMObjsObjs.bottonMenuPIM(driver).click();
+		menuPIMObjsObjs.buttonMenuPIM(driver).click();
 	}
 	
 	@Test
-	public void insertUser(){
+	public void addEmployee(){
 		sleep(3000);
-		menuPIMObjsObjs.bottonSubMenuPIMAddEmployee(driver).click();
+		menuPIMObjsObjs.buttonSubMenuPIMAddEmployee(driver).click();
 		sleep(3000);
 		menuPIMObjsObjs.textAddEmployeeFirstName(driver).sendKeys("Savanna");
 		sleep(3000);
 		menuPIMObjsObjs.textAddEmployeeLastName(driver).sendKeys("Denega");
 		sleep(3000);
-		menuPIMObjsObjs.bottonAddEmployeeSave(driver).click();
+		menuPIMObjsObjs.buttonAddEmployeeSave(driver).click();
 		sleep(5000);
 	}
 	
 	@Test
-	public void searchUser(){
+	public void searchEmployee(){
 		sleep(5000);
-		menuPIMObjsObjs.bottonMenuPIM(driver).click();
+		menuPIMObjsObjs.buttonMenuPIM(driver).click();
 		sleep(3000);
-		menuPIMObjsObjs.bottonSubMenuPIMEmployeeList(driver).click();
+		menuPIMObjsObjs.buttonSubMenuPIMEmployeeList(driver).click();
 		sleep(3000);
 		menuPIMObjsObjs.textSearchEmployeeName(driver).sendKeys("Savanna Denega");
 		sleep(3000);
 		menuPIMObjsObjs.textSearchEmployeeName(driver).sendKeys(Keys.RETURN);
 		sleep(3000);
-		menuPIMObjsObjs.bottonSearchSearch(driver).click();
+		menuPIMObjsObjs.buttonSearchSearch(driver).click();
 		sleep(3000);
 	}
 	

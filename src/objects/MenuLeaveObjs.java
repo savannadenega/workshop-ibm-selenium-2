@@ -11,17 +11,17 @@ import org.openqa.selenium.WebElement;
  */
 public class MenuLeaveObjs {
 
-	public WebElement bottonMenuLeave(WebDriver driver) {
+	public WebElement buttonMenuLeave(WebDriver driver) {
 		String id = "menu_leave_viewLeaveModule";
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement bottonSubMenuEntitlements(WebDriver driver) {
+	public WebElement buttonSubMenuEntitlements(WebDriver driver) {
 		String id = "menu_leave_Entitlements";
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement bottonSubMenuAddEntitlements(WebDriver driver) {
+	public WebElement buttonSubMenuAddEntitlements(WebDriver driver) {
 		String id = "menu_leave_addLeaveEntitlement";
 		return driver.findElement(By.id(id));
 	}
@@ -41,14 +41,14 @@ public class MenuLeaveObjs {
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement bottonSave(WebDriver driver) {
+	public WebElement buttonSave(WebDriver driver) {
 		String id = "btnSave";
 		return driver.findElement(By.id(id));
 	}
 	
 	//
 	
-	public WebElement bottonSubMenuAssignLeave(WebDriver driver) {
+	public WebElement buttonSubMenuAssignLeave(WebDriver driver) {
 		String id = "menu_leave_assignLeave";
 		return driver.findElement(By.id(id));
 	}	
@@ -73,7 +73,7 @@ public class MenuLeaveObjs {
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement bottonSubMenuAssignLeaveAssignBtn(WebDriver driver) {
+	public WebElement buttonSubMenuAssignLeaveAssignBtn(WebDriver driver) {
 		String id = "assignBtn";
 		return driver.findElement(By.id(id));
 	}

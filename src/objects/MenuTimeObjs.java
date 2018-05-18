@@ -11,20 +11,53 @@ import org.openqa.selenium.WebElement;
  */
 public class MenuTimeObjs {
 
-	public WebElement bottonMenuTime(WebDriver driver) {
+	public WebElement buttonMenuTime(WebDriver driver) {
 		String id = "menu_time_viewTimeModule";
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement textEmployeeName(WebDriver driver) {
-		String id = "employee";
+	//
+		
+	public WebElement buttonTimesheetPeriodTimeStartingDays(WebDriver driver) {
+		String id = "time_startingDays";
 		return driver.findElement(By.id(id));
 	}
 	
-	public WebElement buttonView(WebDriver driver) {
-		String id = "btnView";
+	public WebElement buttonTimesheetPeriodSave(WebDriver driver) {
+		String id = "btnSave";
 		return driver.findElement(By.id(id));
 	}
-
+	
+	//
+	
+	public WebElement buttonSubMenuAttendance(WebDriver driver) {
+		String id = "menu_attendance_Attendance";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement buttonSubMenuConfiguration(WebDriver driver) {
+		String id = "menu_attendance_configure";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement checkBoxAttendanceConfiguration1(WebDriver driver) {
+		String id = "attendance_configuration1";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement checkBoxAttendanceConfiguration2(WebDriver driver) {
+		String id = "attendance_configuration2";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement checkBoxAttendanceConfiguration3(WebDriver driver) {
+		String id = "attendance_configuration3";
+		return driver.findElement(By.id(id));
+	}
+	
+	public WebElement buttonSave(WebDriver driver) {
+		String id = "btnSave";
+		return driver.findElement(By.id(id));
+	}
 
 }

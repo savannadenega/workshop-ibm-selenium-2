@@ -21,17 +21,30 @@ public class MenuTimeTestCase extends WebDriverInstance {
 	
 	@Before
 	public void before() {
-		menuTimeObjs.bottonMenuTime(driver).click();
+		menuTimeObjs.buttonMenuTime(driver).click();
 	}
 	
 	@Test
 	public void searchUser(){
+//		sleep(1000);
+//		if(menuTimeObjs.buttonTimesheetPeriodTimeStartingDays(driver).isEnabled()){
+//			menuTimeObjs.buttonTimesheetPeriodTimeStartingDays(driver).click();
+//			sleep(1000);
+//			menuTimeObjs.buttonTimesheetPeriodTimeStartingDays(driver).sendKeys("Monday");
+//			sleep(1000);
+//			menuTimeObjs.buttonTimesheetPeriodSave(driver).click();
+//		}
 		sleep(1000);
-		menuTimeObjs.textEmployeeName(driver).click();
+		menuTimeObjs.buttonSubMenuAttendance(driver).click();
 		sleep(1000);
-		menuTimeObjs.textEmployeeName(driver).sendKeys("Savanna Denega");
+		menuTimeObjs.buttonSubMenuConfiguration(driver).click();
 		sleep(1000);
-		menuTimeObjs.buttonView(driver).click();
+		menuTimeObjs.checkBoxAttendanceConfiguration1(driver).click();
+		sleep(1000);
+		menuTimeObjs.checkBoxAttendanceConfiguration2(driver).click();
+		sleep(1000);
+		menuTimeObjs.checkBoxAttendanceConfiguration3(driver).click();
+		sleep(1000);
+		menuTimeObjs.buttonSave(driver).click();
 	}
-
 }
