@@ -24,7 +24,7 @@ public class MenuAdminTestCase extends WebDriverInstance {
 	MenuAdminObjs menuAdminObjs = PageFactory.initElements(driver, MenuAdminObjs.class);
 		
 	@Before
-	public void before() throws InterruptedException {
+	public void before(){
 		menuAdminObjs.bottonMenuAdmin(driver).click();
 	}
 	
