@@ -23,3 +23,27 @@ Os testes automatizados são realizados no site [http://opensource.demo.orangehr
 - Importe o projeto para o Eclipse no modelo "Existing Projects into Workspace";
 
 ### Pronto, seu ambiente está configurado \o/
+
+### A ordem dos testes automatizados, em cada classe, é realizada de acordo com as imagens abaixo:
+
+Classe: MenuPIMTestCase
+
+![order-tests-project2-1](readme-images/order-tests-project2-1.png)
+
+![order-tests-project2-2](readme-images/order-tests-project2-2.png)
+
+Classe: MenuAdminTestCase
+
+![order-tests-project2-3.1](readme-images/order-tests-project2-3.1.png)
+
+![order-tests-project2-3.2](readme-images/order-tests-project2-3.2.png)
+
+Classe: MenuLeaveTestCase
+
+![order-tests-project2-4](readme-images/order-tests-project2-4.png)
+
+![order-tests-project2-5](readme-images/order-tests-project2-5.png)
+
+Classe: MenuTimeTestCase
+
+![order-tests-project2-6](readme-images/order-tests-project2-6.png)
