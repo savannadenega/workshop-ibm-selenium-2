@@ -19,13 +19,13 @@ import objects.LoginObjs;
 public class LoginTestCase extends WebDriverInstance {
 
 	LoginObjs loginObjs = PageFactory.initElements(driver, LoginObjs.class);
-	
+
 	@Test
-	public void login(){
+	public void login() {
 		sleep(1000);
 		loginObjs.textAdmin(driver).sendKeys("Admin");
 		loginObjs.textPassword(driver).sendKeys("admin");
 		loginObjs.buttonLogin(driver).click();
 	}
-	
+
 }

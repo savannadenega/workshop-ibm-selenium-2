@@ -1,7 +1,12 @@
 package utils;
 
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import testCases.LoginTestCase;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -15,11 +20,14 @@ public class WebDriverInstance {
 	protected static String baseUrl = System.getProperty("baseUrl",
 			"http://opensource.demo.orangehrmlive.com/index.php/admin/viewAdminModule");
 
+	static LoginTestCase loginTestCase = PageFactory.initElements(driver, LoginTestCase.class);
+	
 	@BeforeClass
 	public static void setUp() throws Exception {
 		driver = WebDriverFactoryInstance.getInstance().createConfigurationsWebDriver();
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		driver.get(baseUrl);
+		loginTestCase.login();
 	}
 
 //	@AfterClass

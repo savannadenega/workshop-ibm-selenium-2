@@ -3,6 +3,7 @@ package testCases;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -19,15 +20,13 @@ import utils.WebDriverInstance;
  * @author SavannaDenega
  *
  */
-//@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MenuPIMTestCase extends WebDriverInstance {
 
-	LoginTestCase loginTestCase = PageFactory.initElements(driver, LoginTestCase.class);
 	MenuPIMObjs menuPIMObjsObjs = PageFactory.initElements(driver, MenuPIMObjs.class);
 		
 	@Before
 	public void before() {
-		loginTestCase.login();
 		menuPIMObjsObjs.bottonMenuPIM(driver).click();
 	}
 	
