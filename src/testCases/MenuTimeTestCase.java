@@ -25,7 +25,7 @@ public class MenuTimeTestCase extends WebDriverInstance {
 	}
 	
 	@Test
-	public void searchUser(){
+	public void configuringAttendance(){
 //		sleep(1000);
 //		if(menuTimeObjs.buttonTimesheetPeriodTimeStartingDays(driver).isEnabled()){
 //			menuTimeObjs.buttonTimesheetPeriodTimeStartingDays(driver).click();

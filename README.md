@@ -11,7 +11,6 @@ Os testes automatizados são realizados no site [http://opensource.demo.orangehr
 
 ### Recursos utilizados:
 
-- Selenium Server [Download](https://www.seleniumhq.org/download/)
 - Selenium Java [Download](https://www.seleniumhq.org/download/)
 - Selenium Chrome Driver [Download](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - Junit [Download](https://junit.org/junit4/)
