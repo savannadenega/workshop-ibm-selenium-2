@@ -28,11 +28,14 @@ Os testes automatizados são realizados no site [http://opensource.demo.orangehr
 
 #### A ordem dos testes automatizados, em cada classe, é realizada de acordo com as imagens abaixo:
 
+
 - **Classe: MenuPIMTestCase**
 
 ![order-tests-project2-1](readme-images/order-tests-project2-1.png)
 
 ![order-tests-project2-2](readme-images/order-tests-project2-2.png)
+
+
 
 
 
@@ -44,11 +47,15 @@ Os testes automatizados são realizados no site [http://opensource.demo.orangehr
 
 
 
+
+
 - **Classe: MenuLeaveTestCase**
 
 ![order-tests-project2-4](readme-images/order-tests-project2-4.png)
 
 ![order-tests-project2-5](readme-images/order-tests-project2-5.png)
+
+
 
 
 
