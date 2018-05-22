@@ -58,3 +58,23 @@ Os testes automatizados são realizados no site [http://opensource.demo.orangehr
 - **Classe: MenuTimeTestCase**
 
 ![order-tests-project2-6](readme-images/order-tests-project2-6.png)
+
+
+- **Classe: MenuDirectoryTestCase**
+
+![order-tests-project2-7](readme-images/order-tests-project2-7.PNG)
+
+
+- **Classe: MenuRecruitmentTestCase**
+
+![order-tests-project2-8.1](readme-images/order-tests-project2-8.1.PNG)
+
+
+- **Classe: MenuRecruitmentTestCase**
+
+![order-tests-project2-8.2](readme-images/order-tests-project2-8.2.PNG)
+
+
+- **Classe: MenuRecruitmentTestCase**
+
+![order-tests-project2-8.3](readme-images/order-tests-project2-8.3.PNG)
