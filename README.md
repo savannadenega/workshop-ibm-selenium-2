@@ -14,7 +14,7 @@ Os testes automatizados são realizados no site [http://opensource.demo.orangehr
 - Selenium Java [Download](https://www.seleniumhq.org/download/)
 - Selenium Chrome Driver [Download](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - Junit [Download](https://junit.org/junit4/)
-- IDE de Preferência [Download Intellij](https://www.jetbrains.com/idea/download/#section=mac) | [Download Eclipse]
+- IDE de Preferência [Download Intellij](https://www.jetbrains.com/idea/download/#section=mac) | [Download Eclipse] (http://www.eclipse.org/downloads/)
 
 ### Como configurar o ambiente:
 
